@@ -1,0 +1,26 @@
+{
+  "name": "asap-infovyz",
+  "version": "1.0.0",
+  "description": "ASAP examples using infovyz library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walterra/asap-infovyz.git"
+  },
+  "keywords": [
+    "asap",
+    "infovis"
+  ],
+  "author": "webLyzard technology GmbH",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/walterra/asap-infovyz/issues"
+  },
+  "homepage": "https://github.com/walterra/asap-infovyz#readme",
+  "scripts": {
+    "postinstall": "cd public && bower install && cd .."
+  }
+}

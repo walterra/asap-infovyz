@@ -1,0 +1,25 @@
+{
+  "name": "asap-infovyz",
+  "homepage": "https://github.com/walterra/asap-infovyz",
+  "authors": [
+    "webLyzard technology GmbH"
+  ],
+  "description": "ASAP examples using infovyz library.",
+  "main": "js/main.js",
+  "keywords": [
+    "asap",
+    "infovis"
+  ],
+  "license": "Apache-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "elasticsearch": "^12.1.0",
+    "infovyz": "1.0.0-beta.3"
+  }
+}

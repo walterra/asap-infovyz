@@ -1,0 +1,19 @@
+apache:
+  image: httpd:2.4
+  container_name: infovyz-geomap
+  ports:
+   - "80:80"
+  volumes:
+   - ./public:/usr/local/apache2/htdocs
+elasticsearch:
+  image: elasticsearch:5
+  #command: cat /usr/share/elasticsearch/config/elasticsearch.yml
+  ports:
+   - "9200:9200"
+  volumes:
+   - ./docker/elasticsearch-data:/data
+   - ./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+  environment:
+   - ES_JAVA_OPTS=-Xms512m -Xmx512m
+  extra_hosts:
+   - "docker-host:localhost"
